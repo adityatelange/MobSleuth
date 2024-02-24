@@ -1,0 +1,18 @@
+services:
+  redroid:
+    image: "redroid/redroid:11.0.0-latest"
+    volumes:
+      - ~/MobSleuth/data11_vol:/data
+    ports:
+      - "5555:5555"
+    privileged: true
+  mobsf:
+    image: "opensecurity/mobile-security-framework-mobsf:latest"
+    volumes:
+      - ~/MobSleuth/mobsf_vol:/home/mobsf/.MobSF
+    environment:
+      - MOBSF_ANALYZER_IDENTIFIER=redroid:5555
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redroid

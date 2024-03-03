@@ -21,10 +21,14 @@ Includes the following tools:
 
 ## Install
 
+```sh
+wget -O - https://raw.githubusercontent.com/adityatelange/MobSleuth/main/install.sh | bash
+```
+
 Tools can be installed one by one.
 
 ```sh
-bash clone.sh
+cd $HOME/MobSleuth/src
 bash install/common_deps.sh
 bash install/docker.sh
 # Note: logout and log-in again as we add our current user to `docker` group
@@ -32,8 +36,16 @@ bash install/redroid.sh
 bash install/mobsf.sh
 bash install/scrcpy.sh
 bash install/frida.sh
+bash install/jadx.sh
 bash install/burpsuite.sh
 ```
+
+## After Installation
+
+- Scripts will be cloned in `~/MobSleuth/src` directory. You may update the scripts using `git pull` in this directory.
+- Installers will be downloaded in `~/MobSleuth/installers` directory.
+- Tools will be installed in `~/MobSleuth/tools` directory.
+
 
 ## Setup Diagram
 

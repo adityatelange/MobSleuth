@@ -24,6 +24,9 @@ What you get:
 - Scripts to generate a CA certificate and install them on the Android container.
 - Scripts to install and run Frida on the Android container.
 
+<kbd>![Screenshot](https://github.com/adityatelange/MobSleuth/assets/21258296/c5a2d717-ba51-4209-8140-7d204e14579c)</kbd>
+
+
 ## Setup a VM - Lubuntu-22.04
 
 - [Download Lubuntu](https://lubuntu.me/downloads/) or any Ubuntu based distro.

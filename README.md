@@ -35,6 +35,10 @@ What you get:
 
 ## Install
 
+> [!NOTE]  
+> Below scripts might require `sudo` access to install certain packages and dependencies.
+> Review the scripts before running them.
+
 ```sh
 wget -qO - https://raw.githubusercontent.com/adityatelange/MobSleuth/main/install.sh | bash
 ```

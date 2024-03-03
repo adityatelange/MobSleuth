@@ -17,7 +17,7 @@ print_banner
 
 # ask confirmation from the user
 echo -e "[+] This script will clone the MobSleuth repository to $WORKING_DIR/src"
-read -p "Do you want to continue? (y/N) " -n 1 -r
+read -p "Do you want to continue? (y/N) " -n 1 -r </dev/tty
 echo
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then

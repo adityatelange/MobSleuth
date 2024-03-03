@@ -69,10 +69,14 @@ bash install/pidcat.sh
 
 ## After Installation
 
-- Scripts will be cloned in `~/MobSleuth/src` directory. You may update the scripts using `git pull` in this directory.
-- Installers will be downloaded in `~/MobSleuth/installers` directory.
-- Tools will be installed in `~/MobSleuth/tools` directory.
+All the tools are installed in the `~/MobSleuth` directory.
 
+- `~/MobSleuth/src` - contains the installation scripts. You may update MobSleuth using `git pull` in this directory.
+- `~/MobSleuth/installers` - contains the downloaded installers.
+- `~/MobSleuth/data11_vol` - contains the data directory for the reDroid container for persistence.
+- `~/MobSleuth/mobsf_vol` - contains the data directory for the MobSF container for persistence.
+- `~/MobSleuth/tools` - contains the tools installed.
+- `~/MobSleuth/certs` - contains the generated CA certificate and private key.
 
 ## Setup Diagram
 

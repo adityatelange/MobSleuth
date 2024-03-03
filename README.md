@@ -8,6 +8,9 @@ Includes the following tools:
 - [reDroid](https://github.com/remote-android/redroid-doc) `FOSS` - Remote anDroid solution for emulating an Android device in a container.
 - [Scrcpy](https://github.com/Genymobile/scrcpy) `FOSS` - a free and open-source tool that allows you to mirror and control your Android device from your computer via ADB.
 - [Frida](https://github.com/frida/frida) `FOSS` - Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers.
+- [Jadx](https://github.com/skylot/jadx) `FOSS` - Dex to Java decompiler.
+- [Objection](https://github.com/sensepost/objection) `FOSS` - Runtime Mobile Exploration.
+- [Pidcat](https://github.com/JakeWharton/pidcat) `FOSS` - Colored logcat script which only shows log entries for a specific application package.
 - [BurpSuite CE](https://portswigger.net/burp/documentation/desktop/getting-started) `proprietary` - Powerful web application security testing platform with interception, scanning, fuzzing, and more.
 
 ## Setup a VM - Lubuntu-22.04
@@ -45,6 +48,8 @@ bash install/scrcpy.sh
 bash install/frida.sh
 bash install/jadx.sh
 bash install/burpsuite.sh
+bash install/objection.sh
+bash install/pidcat.sh
 ```
 
 ## After Installation

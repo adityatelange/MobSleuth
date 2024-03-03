@@ -1,8 +1,9 @@
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
+WORKING_DIR=$HOME/MobSleuth
+
 
 echo -e "${GREEN}[#] DOCKER${NC}"
-INST_DIR=~/MobSleuth
 
 echo -e "${GREEN}[+] Updating package list${NC}"
 sudo apt update -yqq

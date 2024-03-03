@@ -1,7 +1,11 @@
-FILEDIR=$(dirname -- "$( readlink -f -- "$0"; )";)
-INST_DIR=~/MobSleuth
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+WORKING_DIR=$HOME/MobSleuth
 
-rm -rf $INST_DIR/src
-mkdir -p $INST_DIR/src
-cp -r $FILEDIR/* $INST_DIR/src
-cd $INST_DIR/src
+
+FILEDIR=$(dirname -- "$( readlink -f -- "$0"; )";)
+
+rm -rf $WORKING_DIR/src
+mkdir -p $WORKING_DIR/src
+cp -r $FILEDIR/* $WORKING_DIR/src
+cd $WORKING_DIR/src

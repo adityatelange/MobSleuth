@@ -1,7 +1,7 @@
-INST_DIR=~/MobSleuth
+WORKING_DIR=~/MobSleuth
 
-mkdir -p $INST_DIR/cert
-cd $INST_DIR/cert
+mkdir -p $WORKING_DIR/cert
+cd $WORKING_DIR/cert
 openssl x509 -inform der -in certificate.der -out certificate.cer
 
 hashed_name=`openssl x509 -inform PEM -subject_hash_old -in certificate.cer | head -1` && cp certificate.cer $hashed_name.0

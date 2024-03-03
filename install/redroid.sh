@@ -1,14 +1,15 @@
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
+WORKING_DIR=$HOME/MobSleuth
+
 
 echo -e "${GREEN}[#] REDROID${NC}"
-INST_DIR=~/MobSleuth
 
 echo -e "${GREEN}[+] Pulling latest image of redroid 11${NC}"
 docker pull redroid/redroid:11.0.0-latest
 
 echo -e "${GREEN}[+] creating persistent data folder for reDroid${NC}"
-mkdir -p  $INST_DIR/data11_vol
+mkdir -p  $WORKING_DIR/data11_vol
 
 echo -e "${GREEN}[+] enabling binder-linux service to load kernel module${NC}"
 cat <<EOF | sudo tee /etc/systemd/system/load-binder-linux.service

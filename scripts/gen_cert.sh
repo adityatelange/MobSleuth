@@ -2,13 +2,13 @@
 # certificate.der: Certificate signed by the CA
 # ca_private_key.der: Private key of the CA
 # certificate_private_key.der: Private key of the signed certificate
-INST_DIR=~/MobSleuth
+WORKING_DIR=~/MobSleuth
 
-rm -r $INST_DIR/tmpcert
-mkdir -p $INST_DIR/tmpcert 
-mkdir -p $INST_DIR/cert
+rm -r $WORKING_DIR/tmpcert
+mkdir -p $WORKING_DIR/tmpcert 
+mkdir -p $WORKING_DIR/cert
 
-cd $INST_DIR/tmpcert
+cd $WORKING_DIR/tmpcert
 
 openssl genpkey -algorithm RSA -out ca_private_key.key
 
@@ -25,7 +25,7 @@ openssl x509 -in certificate.crt -outform DER -out certificate.der
 openssl pkcs8 -topk8 -inform PEM -outform DER -in ca_private_key.key -out ca_private_key.der -nocrypt
 openssl pkcs8 -topk8 -inform PEM -outform DER -in certificate_private_key.key -out certificate_private_key.der -nocrypt
 
-cp certificate.der $INST_DIR/cert
-cp certificate_private_key.der $INST_DIR/cert
-cd $INST_DIR
-rm -r $INST_DIR/tmpcert
+cp certificate.der $WORKING_DIR/cert
+cp certificate_private_key.der $WORKING_DIR/cert
+cd $WORKING_DIR
+rm -r $WORKING_DIR/tmpcert

@@ -31,7 +31,14 @@ Tools can be installed one by one.
 cd $HOME/MobSleuth/src
 bash install/common_deps.sh
 bash install/docker.sh
-# Note: logout and log-in again as we add our current user to `docker` group
+```
+
+Logout and login again to apply group changes as we have added user to `docker` group.
+
+Continue installing rest of the components.
+
+```sh
+cd $HOME/MobSleuth/src
 bash install/redroid.sh
 bash install/mobsf.sh
 bash install/scrcpy.sh

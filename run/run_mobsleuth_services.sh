@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#
+# This script runs MobSleuth services using Docker Compose.
 
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color

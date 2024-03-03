@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+#
+# This script pushes the custom certificate to the device.
+# The certificate is saved in the $WORKING_DIR/cert directory.
+# The certificate is pushed to /system/etc/security/cacerts/ on the device.
 
 WORKING_DIR=~/MobSleuth
 

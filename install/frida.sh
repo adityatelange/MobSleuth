@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#
+# This script installs Frida on the system.
 
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color

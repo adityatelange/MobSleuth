@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#
+# This script clones the repository to the working directory.
 
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color

@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
+#
+# This script generates a custom certificate and private key for the MobSleuth CA and a certificate signed by the CA.
+# The generated files are:
+# - ca_certificate.der: Custom CA certificate
+# - certificate.der: Certificate signed by the CA
+# - ca_private_key.der: Private key of the CA
+# - certificate_private_key.der: Private key of the signed certificate
+# The files are saved in the $WORKING_DIR/cert directory.
 
-# ca_certificate.der: Custom CA certificate
-# certificate.der: Certificate signed by the CA
-# ca_private_key.der: Private key of the CA
-# certificate_private_key.der: Private key of the signed certificate
 WORKING_DIR=~/MobSleuth
 
 rm -r $WORKING_DIR/tmpcert

@@ -1,3 +1,7 @@
+# MobSleuth
+# MobSleuth is a docker-compose file that runs the Redroid and MobSF containers together.
+# It is a simple way to run both containers together and have them communicate with each other.
+
 services:
   redroid:
     image: "redroid/redroid:11.0.0-latest"

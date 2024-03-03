@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#
+# This script installs MobSF on the system using Docker.
 
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color

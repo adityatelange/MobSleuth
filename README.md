@@ -109,6 +109,17 @@ flowchart
             subgraph Frida
                 frida["frida-tools"] <---> lp5555
             end
+
+            subgraph pidcat
+                pid["via ADB"] <---> lp5555
+            end
+
+            subgraph objection
+                obj["via ADB"] <---> lp5555
+            end
+
+            subgraph jadx
+            end
         end
     end
 ```

@@ -5,12 +5,12 @@
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 WORKING_DIR=$HOME/MobSleuth
-
+TAG=$(cat $WORKING_DIR/src/mobsleuth.default.conf | grep "REDROID_TAG" | cut -d'=' -f2)
 
 echo -e "${GREEN}[#] REDROID${NC}"
 
-echo -e "${GREEN}[+] Pulling latest image of redroid 11${NC}"
-docker pull redroid/redroid:11.0.0-latest
+echo -e "${GREEN}[+] Pulling $TAG image of redroid 11${NC}"
+docker pull redroid/redroid:$TAG
 
 echo -e "${GREEN}[+] creating persistent data folder for reDroid${NC}"
 mkdir -p  $WORKING_DIR/data11_vol

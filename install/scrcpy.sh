@@ -5,7 +5,7 @@
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 WORKING_DIR=$HOME/MobSleuth
-
+TAG=$(cat $WORKING_DIR/src/mobsleuth.default.conf | grep "SCRCPY_TAG" | cut -d'=' -f2)
 
 echo -e "${GREEN}[#] SCRCPY${NC}"
 
@@ -18,7 +18,7 @@ sudo apt install --no-install-recommends -yqq \
     libswresample-dev libusb-1.0-0 libusb-1.0-0-dev
 rm -rf  $WORKING_DIR/installers/scrcpy
 echo -e "${GREEN}[+] Cloning scrcpy src...${NC}"
-git clone https://github.com/Genymobile/scrcpy --depth=1 --branch "master" --progress $WORKING_DIR/installers/scrcpy
+git clone https://github.com/Genymobile/scrcpy --depth=1 --branch $TAG --progress $WORKING_DIR/installers/scrcpy
 
 cd $WORKING_DIR/installers/scrcpy
 echo -e "${GREEN}[+] Installing scrcpy...${NC}"

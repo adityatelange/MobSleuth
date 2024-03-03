@@ -5,13 +5,14 @@
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 WORKING_DIR=$HOME/MobSleuth
+TAG=$(cat $WORKING_DIR/src/mobsleuth.default.conf | grep "JADX_TAG" | cut -d'=' -f2)
 
 
 echo -e "${GREEN}[#] JADX${NC}"
 
 mkdir -p $WORKING_DIR/tools
-wget --show-progress -O $WORKING_DIR/tools/jadx-1.4.7.zip "https://github.com/skylot/jadx/releases/download/v1.4.7/jadx-1.4.7.zip"
-unzip -o -d $WORKING_DIR/tools/jadx $WORKING_DIR/tools/jadx-1.4.7.zip
+wget --show-progress -O $WORKING_DIR/tools/jadx-$TAG.zip "https://github.com/skylot/jadx/releases/download/v${TAG}/jadx-${TAG}.zip"
+unzip -o -d $WORKING_DIR/tools/jadx $WORKING_DIR/tools/jadx-$TAG.zip
 rm $WORKING_DIR/tools/jadx-*.zip
 
 ln -s $WORKING_DIR/tools/jadx/bin/jadx ~/.local/bin/jadx

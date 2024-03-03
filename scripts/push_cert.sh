@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 WORKING_DIR=~/MobSleuth
 
 mkdir -p $WORKING_DIR/cert

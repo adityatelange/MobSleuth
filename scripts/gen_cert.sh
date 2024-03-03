@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # ca_certificate.der: Custom CA certificate
 # certificate.der: Certificate signed by the CA
 # ca_private_key.der: Private key of the CA

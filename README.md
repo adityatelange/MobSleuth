@@ -13,6 +13,17 @@ Includes the following tools:
 - [Pidcat](https://github.com/JakeWharton/pidcat) `FOSS` - Colored logcat script which only shows log entries for a specific application package.
 - [BurpSuite CE](https://portswigger.net/burp/documentation/desktop/getting-started) `proprietary` - Powerful web application security testing platform with interception, scanning, fuzzing, and more.
 
+What you get:
+- A complete setup of tools to start hacking Android apps.
+- A dockerized environment to run Android apps in a container.
+- One-command `root` access to the Android container.
+- BurpSuite running on the host machine to intercept and modify traffic.
+- Mobsf with *dynamic analysis* capabilities connected to Android container.
+- ADB server running on port 5555 to connect to the Android container.
+- Scrcpy to mirror and control the Android container.
+- Scripts to generate a CA certificate and install them on the Android container.
+- Scripts to install and run Frida on the Android container.
+
 ## Setup a VM - Lubuntu-22.04
 
 - [Download Lubuntu](https://lubuntu.me/downloads/) or any Ubuntu based distro.

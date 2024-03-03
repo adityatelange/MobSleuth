@@ -4,11 +4,11 @@
 
 Includes the following tools:
 
-- [MobSF `FOSS`](https://github.com/MobSF/Mobile-Security-Framework-MobSF) - Mobile Security Framework is an open-source, automated mobile app security testing tool.
-- [reDroid `FOSS`](https://github.com/remote-android/redroid-doc) - Remote anDroid solution for emulating an Android device in a container.
-- [Scrcpy `FOSS`](https://github.com/Genymobile/scrcpy) - a free and open-source tool that allows you to mirror and control your Android device from your computer via ADB.
-- [Frida `FOSS`](https://github.com/frida/frida) - Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers.
-- [BurpSuite CE `proprietary`](https://portswigger.net/burp/documentation/desktop/getting-started) - Powerful web application security testing platform with interception, scanning, fuzzing, and more.
+- [MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF) `FOSS` - Mobile Security Framework is an open-source, automated mobile app security testing tool.
+- [reDroid](https://github.com/remote-android/redroid-doc) `FOSS` - Remote anDroid solution for emulating an Android device in a container.
+- [Scrcpy](https://github.com/Genymobile/scrcpy) `FOSS` - a free and open-source tool that allows you to mirror and control your Android device from your computer via ADB.
+- [Frida](https://github.com/frida/frida) `FOSS` - Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers.
+- [BurpSuite CE](https://portswigger.net/burp/documentation/desktop/getting-started) `proprietary` - Powerful web application security testing platform with interception, scanning, fuzzing, and more.
 
 ## Setup a VM - Lubuntu-22.04
 

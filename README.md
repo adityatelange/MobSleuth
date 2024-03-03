@@ -22,7 +22,7 @@ Includes the following tools:
 ## Install
 
 ```sh
-wget -O - https://raw.githubusercontent.com/adityatelange/MobSleuth/main/install.sh | bash
+wget -qO - https://raw.githubusercontent.com/adityatelange/MobSleuth/main/install.sh | bash
 ```
 
 Tools can be installed one by one.

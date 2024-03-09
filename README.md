@@ -81,6 +81,132 @@ All the tools are installed in the `~/MobSleuth` directory.
 - `~/MobSleuth/tools` - contains the tools installed.
 - `~/MobSleuth/certs` - contains the generated CA certificate and private key.
 
+## Usage
+
+### Start the containers
+
+```sh
+cd $HOME/MobSleuth
+bash run/run_mobsleuth_services.sh
+```
+
+This will start the following services:
+- reDroid - Android container accessible on port 5555
+- MobSF - Mobile Security Framework accessible on port 8000
+
+### Generate CA certificate
+
+```sh
+cd $HOME/MobSleuth
+bash scripts/generate_cert.sh
+```
+
+### Install CA certificate on the Android container
+
+Make sure the Android container is running.
+
+```sh
+cd $HOME/MobSleuth
+bash scripts/push_cert.sh
+```
+
+### Import CA certificate in BurpSuite
+
+- Open BurpSuite and go to `Proxy` > `Proxy Settings`
+- Select an Interface and click on `Edit`.
+- Click on `Import / export CA Certificate`.
+- Select `Certificate and private key in DER format` and click `Next`.
+- In CA Certificate, select `~/MobSleuth/cert/certificate.der` and in Private key, select `~/MobSleuth/cert/certificate_private_key.der`.
+- Click `Next` and `OK`.
+
+### Set/Unset BurpSuite Proxy in the Android container
+
+```sh
+cd $HOME/MobSleuth
+bash run/set_proxy.sh
+```
+
+Unset using:
+    
+```sh
+cd $HOME/MobSleuth
+bash run/unset_proxy.sh
+```
+
+### Access MobSF
+
+Open your browser and go to `http://localhost:8000`.
+
+### Access reDroid
+
+Connect to the Android container using `scrcpy` or `adb`.
+
+Mirror Screen using `scrcpy`:
+
+```sh
+scrcpy
+```
+
+Connect using `adb`:
+
+```sh
+adb connect localhost:5555
+```
+
+ADB shell:
+
+```sh
+adb shell
+```
+
+### Rooting the Android container
+
+Make sure the Android container is running. Then run the following command.
+
+```sh
+adb root
+```
+
+### Using Frida
+
+Push frida-server and run it on the Android container.
+
+```sh
+cd $HOME/MobSleuth
+bash scripts/push_fridaserver.sh
+bash scripts/run_fridaserver.sh
+```
+
+Now we can use `frida` to interact with the Android container.
+
+```sh
+frida-ps -U
+```
+
+### Access `jadx`/`objection`/`pidcat`
+
+These tools can directly accessed using the terminal.
+
+```sh
+jadx
+```
+
+```sh
+objection
+```
+
+```sh
+pidcat
+```
+
+## Uninstall
+
+This will remove all the tools and the containers. Be careful before running this command.
+
+```sh
+sudo rm -rf $HOME/MobSleuth
+```
+
 ## Setup Diagram
 
 ```mermaid

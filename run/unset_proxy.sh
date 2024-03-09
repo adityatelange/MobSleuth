@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 #
+# This script is part of the MobSleuth project.
+# https://github.com/adityatelange/MobSleuth
+#
 # This script unsets the proxy for the Android emulator.
 
 # check if adb devce is connected using adb devices command

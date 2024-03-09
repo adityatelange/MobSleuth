@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 #
+# This script is part of the MobSleuth project.
+# https://github.com/adityatelange/MobSleuth
+#
 # This script cleans the system by removing unnecessary packages and files.
 
 GREEN='\033[0;32m'

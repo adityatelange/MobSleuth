@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 #
+# This script is part of the MobSleuth project.
+# https://github.com/adityatelange/MobSleuth
+#
 # This script installs MobSF on the system using Docker.
 
 GREEN='\033[0;32m'

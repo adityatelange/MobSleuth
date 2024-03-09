@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 #
+# This script is part of the MobSleuth project.
+# https://github.com/adityatelange/MobSleuth
+#
 # This script generates a custom certificate and private key for the MobSleuth CA and a certificate signed by the CA.
 # The generated files are:
 # - ca_certificate.der: Custom CA certificate

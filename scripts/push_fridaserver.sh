@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 #
+# This script is part of the MobSleuth project.
+# https://github.com/adityatelange/MobSleuth
+#
 # This script pushes fria server to the device.
 # The frida server is saved in the $WORKING_DIR/tools directory.
 # The frida server is pushed to /data/local/tmp/ on the device.

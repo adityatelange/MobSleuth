@@ -22,6 +22,7 @@ print_banner
 if [ -d "$WORKING_DIR" ]; then
     echo -e "${GREEN}[+] MobSleuth is already installed at $WORKING_DIR${NC}"
     # ask confirmation for updating
+    echo -e "(Updating will not affect your existing data and only updates $WORKING_DIR/src)"
     read -p "Do you want to update? (y/N) " -n 1 -r </dev/tty
     echo
     if [[ ! $REPLY =~ ^[Yy]$ ]]

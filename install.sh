@@ -18,19 +18,43 @@ print_banner () {
 }
 print_banner
 
-# ask confirmation from the user
-echo -e "[+] This script will clone the MobSleuth repository to $WORKING_DIR/src"
-read -p "Do you want to continue? (y/N) " -n 1 -r </dev/tty
-echo
-if [[ ! $REPLY =~ ^[Yy]$ ]]
-then
-    echo -e "${GREEN}[+] Exiting...${NC}"
+# check if MobSleuth is already installed
+if [ -d "$WORKING_DIR" ]; then
+    echo -e "${GREEN}[+] MobSleuth is already installed at $WORKING_DIR${NC}"
+    # ask confirmation for updating
+    read -p "Do you want to update? (y/N) " -n 1 -r </dev/tty
+    echo
+    if [[ ! $REPLY =~ ^[Yy]$ ]]
+    then
+        echo -e "${GREEN}[+] Exiting...${NC}"
+        exit 1
+    fi
+
+    echo -e "${GREEN}[+] Updating MobSleuth...${NC}"
+    cd $WORKING_DIR/src
+    git reset --hard HEAD
+    git clean -f -d
+    git pull
+
+    echo -e "${GREEN}[+] Done!${NC}"
+    exit 1
+else
+    echo -e "${GREEN}[+] MobSleuth will be installed at $WORKING_DIR${NC}"
+
+    # ask confirmation from the user
+    read -p "Do you want to continue? (y/N) " -n 1 -r </dev/tty
+    echo
+    if [[ ! $REPLY =~ ^[Yy]$ ]]
+    then
+        echo -e "${GREEN}[+] Exiting...${NC}"
+        exit 1
+    fi
+
+    rm -rf $WORKING_DIR/src
+    mkdir -p $WORKING_DIR
+    echo -e "${GREEN}[+] Cloning MobSleuth to $WORKING_DIR/src${NC}"
+    git clone https://github.com/adityatelange/MobSleuth $WORKING_DIR/src
+
+    echo -e "${GREEN}[+] Done!${NC}"
     exit 1
 fi
-
-rm -rf $WORKING_DIR/src
-mkdir -p $WORKING_DIR
-echo -e "${GREEN}[+] Cloning MobSleuth to $WORKING_DIR/src${NC}"
-git clone https://github.com/adityatelange/MobSleuth $WORKING_DIR/src
-
-echo -e "${GREEN}[+] Done!${NC}"

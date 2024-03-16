@@ -18,8 +18,8 @@ wget --show-progress -O $WORKING_DIR/tools/jadx-$TAG.zip "https://github.com/sky
 unzip -o -d $WORKING_DIR/tools/jadx $WORKING_DIR/tools/jadx-$TAG.zip
 rm $WORKING_DIR/tools/jadx-*.zip
 
-ln -s $WORKING_DIR/tools/jadx/bin/jadx ~/.local/bin/jadx
-ln -s $WORKING_DIR/tools/jadx/bin/jadx-gui ~/.local/bin/jadx-gui
+ln -s $WORKING_DIR/tools/jadx/bin/jadx $HOME/.local/bin/jadx
+ln -s $WORKING_DIR/tools/jadx/bin/jadx-gui $HOME/.local/bin/jadx-gui
 
 echo -e "${GREEN}[+] Done!${NC}"
 echo -e "${GREEN}[+] jadx and jadx-gui are now available in your PATH${NC}"

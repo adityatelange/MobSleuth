@@ -19,9 +19,9 @@ sudo apt install apt-transport-https ca-certificates curl software-properties-co
 
 # Check if $HOME.local/bin is in PATH and add it if not
 if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
-    echo -e "${GREEN}[+] Adding ~/.local/bin to PATH in $HOME/.bashrc${NC}"
+    echo -e "${GREEN}[+] Adding $HOME/.local/bin to PATH in $HOME/.bashrc${NC}"
     echo "" >> $HOME/.bashrc
-    echo "# set PATH so it includes user's private bin if it exists" >> $HOME/.bashrc
+    echo "# set PATH so it includes user's private bin" >> $HOME/.bashrc
     echo "export PATH=\$HOME/.local/bin:\$PATH" >> $HOME/.bashrc
     source $HOME/.bashrc
 fi

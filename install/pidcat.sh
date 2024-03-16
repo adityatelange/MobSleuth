@@ -14,6 +14,6 @@ echo -e "${GREEN}[#] PIDCAT${NC}"
 mkdir -p $WORKING_DIR/tools
 git clone https://github.com/JakeWharton/pidcat.git --depth=1 $WORKING_DIR/tools/pidcat
 
-ln -s $WORKING_DIR/tools/pidcat/pidcat.py ~/.local/bin/pidcat
+ln -s $WORKING_DIR/tools/pidcat/pidcat.py $HOME/.local/bin/pidcat
 
 echo -e "${GREEN}[+] Done!${NC}"

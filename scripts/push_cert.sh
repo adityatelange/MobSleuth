@@ -7,7 +7,9 @@
 # The certificate is saved in the $WORKING_DIR/cert directory.
 # The certificate is pushed to /system/etc/security/cacerts/ on the device.
 
-WORKING_DIR=~/MobSleuth
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+WORKING_DIR=$HOME/MobSleuth
 
 mkdir -p $WORKING_DIR/cert
 cd $WORKING_DIR/cert

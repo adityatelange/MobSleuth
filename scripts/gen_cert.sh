@@ -11,7 +11,9 @@
 # - certificate_private_key.der: Private key of the signed certificate
 # The files are saved in the $WORKING_DIR/cert directory.
 
-WORKING_DIR=~/MobSleuth
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+WORKING_DIR=$HOME/MobSleuth
 
 rm -r $WORKING_DIR/tmpcert
 mkdir -p $WORKING_DIR/tmpcert 

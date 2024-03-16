@@ -12,6 +12,7 @@ Includes the following tools:
 - [Objection](https://github.com/sensepost/objection) `FOSS` - Runtime Mobile Exploration.
 - [Pidcat](https://github.com/JakeWharton/pidcat) `FOSS` - Colored logcat script which only shows log entries for a specific application package.
 - [APKiD](https://github.com/rednaga/APKiD) `FOSS` - Android Application Identifier for Packers, Protectors, Obfuscators and Oddities - PEiD for Android
+- [ApkTool](https://github.com/iBotPeaches/Apktool) `FOSS` - A tool for reverse engineering Android apk files
 - [BurpSuite CE](https://portswigger.net/burp/documentation/desktop/getting-started) `proprietary` - Powerful web application security testing platform with interception, scanning, fuzzing, and more.
 
 What you get:

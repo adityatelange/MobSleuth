@@ -11,6 +11,7 @@ Includes the following tools:
 - [Jadx](https://github.com/skylot/jadx) `FOSS` - Dex to Java decompiler.
 - [Objection](https://github.com/sensepost/objection) `FOSS` - Runtime Mobile Exploration.
 - [Pidcat](https://github.com/JakeWharton/pidcat) `FOSS` - Colored logcat script which only shows log entries for a specific application package.
+- [APKiD](https://github.com/rednaga/APKiD) `FOSS` - Android Application Identifier for Packers, Protectors, Obfuscators and Oddities - PEiD for Android
 - [BurpSuite CE](https://portswigger.net/burp/documentation/desktop/getting-started) `proprietary` - Powerful web application security testing platform with interception, scanning, fuzzing, and more.
 
 What you get:

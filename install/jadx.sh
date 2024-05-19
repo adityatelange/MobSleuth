@@ -18,6 +18,7 @@ wget --show-progress -O $WORKING_DIR/tools/jadx-$TAG.zip "https://github.com/sky
 unzip -o -d $WORKING_DIR/tools/jadx $WORKING_DIR/tools/jadx-$TAG.zip
 rm $WORKING_DIR/tools/jadx-*.zip
 
+mkdir -p $HOME/.local/bin/
 ln -s $WORKING_DIR/tools/jadx/bin/jadx $HOME/.local/bin/jadx
 ln -s $WORKING_DIR/tools/jadx/bin/jadx-gui $HOME/.local/bin/jadx-gui
 

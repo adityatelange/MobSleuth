@@ -17,6 +17,9 @@ sudo apt update -yqq
 echo -e "${GREEN}[+] Installing deps${NC}"
 sudo apt install apt-transport-https ca-certificates curl software-properties-common python3-pip python-is-python3 -yqq --no-install-recommends
 
+# Create .local/bin dir
+mkdir -p $HOME/.local/bin/
+
 # Check if $HOME.local/bin is in PATH and add it if not
 if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
     echo -e "${GREEN}[+] Adding $HOME/.local/bin to PATH in $HOME/.bashrc${NC}"

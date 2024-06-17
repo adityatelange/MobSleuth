@@ -4,16 +4,18 @@
 
 Includes the following tools:
 
-- [MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF) `FOSS` - Mobile Security Framework is an open-source, automated mobile app security testing tool.
-- [reDroid](https://github.com/remote-android/redroid-doc) `FOSS` - Remote anDroid solution for emulating an Android device in a container.
-- [Scrcpy](https://github.com/Genymobile/scrcpy) `FOSS` - a free and open-source tool that allows you to mirror and control your Android device from your computer via ADB.
-- [Frida](https://github.com/frida/frida) `FOSS` - Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers.
-- [Jadx](https://github.com/skylot/jadx) `FOSS` - Dex to Java decompiler.
-- [Objection](https://github.com/sensepost/objection) `FOSS` - Runtime Mobile Exploration.
-- [Pidcat](https://github.com/JakeWharton/pidcat) `FOSS` - Colored logcat script which only shows log entries for a specific application package.
-- [APKiD](https://github.com/rednaga/APKiD) `FOSS` - Android Application Identifier for Packers, Protectors, Obfuscators and Oddities - PEiD for Android
-- [ApkTool](https://github.com/iBotPeaches/Apktool) `FOSS` - A tool for reverse engineering Android apk files
-- [BurpSuite CE](https://portswigger.net/burp/documentation/desktop/getting-started) `proprietary` - Powerful web application security testing platform with interception, scanning, fuzzing, and more.
+| Tool Name                                                                          | Type        | Description                                                                                                       |
+| ---------------------------------------------------------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------- |
+| [MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)                  | FOSS        | Mobile Security Framework is an open-source, automated mobile app security testing tool.                          |
+| [reDroid](https://github.com/remote-android/redroid-doc)                           | FOSS        | Remote anDroid solution for emulating an Android device in a container.                                           |
+| [Scrcpy](https://github.com/Genymobile/scrcpy)                                     | FOSS        | A free and open-source tool that allows you to mirror and control your Android device from your computer via ADB. |
+| [Frida](https://github.com/frida/frida)                                            | FOSS        | Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers.                      |
+| [Jadx](https://github.com/skylot/jadx)                                             | FOSS        | Dex to Java decompiler.                                                                                           |
+| [Objection](https://github.com/sensepost/objection)                                | FOSS        | Runtime Mobile Exploration.                                                                                       |
+| [Pidcat](https://github.com/JakeWharton/pidcat)                                    | FOSS        | Colored logcat script which only shows log entries for a specific application package.                            |
+| [APKiD](https://github.com/rednaga/APKiD)                                          | FOSS        | Android Application Identifier for Packers, Protectors, Obfuscators and Oddities - PEiD for Android.              |
+| [ApkTool](https://github.com/iBotPeaches/Apktool)                                  | FOSS        | A tool for reverse engineering Android apk files.                                                                 |
+| [BurpSuite CE](https://portswigger.net/burp/documentation/desktop/getting-started) | proprietary | Powerful web application security testing platform with interception, scanning, fuzzing, and more.                |
 
 What you get:
 - A complete setup of tools to start hacking Android apps.

@@ -18,5 +18,5 @@ fi
 
 echo -e "${GREEN}[+] Starting frida-server${NC}"
 
-adb shell /data/local/tmp/frida-server-$TAG-android-x86_64 -D &
+adb shell /data/local/tmp/frida-server-$TAG -D &
 echo -e "${GREEN}[+] Done!${NC}"

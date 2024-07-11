@@ -17,6 +17,9 @@ pip3 install frida-tools
 mkdir -p $WORKING_DIR/tools
 wget --show-progress -O $WORKING_DIR/tools/frida-server-$TAG-android-x86_64.xz "https://github.com/frida/frida/releases/download/${TAG}/frida-server-${TAG}-android-x86_64.xz"
 wget --show-progress -O $WORKING_DIR/tools/frida-server-$TAG-android-x86.xz "https://github.com/frida/frida/releases/download/${TAG}/frida-server-${TAG}-android-x86.xz"
+wget --show-progress -O $WORKING_DIR/tools/frida-server-$TAG-android-arm64.xz "https://github.com/frida/frida/releases/download/${TAG}/frida-server-${TAG}-android-arm64.xz"
+wget --show-progress -O $WORKING_DIR/tools/frida-server-$TAG-android-arm.xz "https://github.com/frida/frida/releases/download/${TAG}/frida-server-${TAG}-android-arm.xz"
+
 xz -f -d $WORKING_DIR/tools/frida-server*.xz
 
 echo -e "${GREEN}[+] Done!${NC}"

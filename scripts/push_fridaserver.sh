@@ -18,9 +18,25 @@ if [ -z "$(adb devices | grep -v List)" ]; then
     exit 1
 fi
 
-echo -e "${GREEN}[+] Pushing frida-server-$TAG ${NC}"
+ABI=$(adb shell getprop ro.product.cpu.abi)
 
-adb push $WORKING_DIR/tools/frida-server-$TAG-android-x86_64 /data/local/tmp/frida-server-$TAG
+if [[ $ABI == arm64* ]] ; then
+    ABI="arm64"
+elif [[ $ABI == arm* ]]; then
+    ABI="arm"
+elif [[ $ABI == x86_64* ]]; then
+    ABI="x86_64"
+elif [[ $ABI == x86* ]]; then
+    ABI="x86"
+else
+    echo "Unknown ABI"
+    echo $ABI
+    exit 1
+fi
+
+
+echo -e "${GREEN}[+] Pushing frida-server-$TAG for $ABI ${NC}"
+adb push $WORKING_DIR/tools/frida-server-$TAG-android-$ABI /data/local/tmp/frida-server-$TAG
 adb shell chmod +x /data/local/tmp/frida-server-$TAG
 
 echo -e "${GREEN}[+] Done!${NC} Use run_fridaserver.sh to start the frida server."

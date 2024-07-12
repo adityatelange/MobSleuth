@@ -13,11 +13,12 @@ TAG=$(cat $WORKING_DIR/src/mobsleuth.default.conf | grep "APKTOOL_TAG" | cut -d'
 echo $TAG
 echo -e "${GREEN}[#] APK TOOL${NC}"
 mkdir -p $WORKING_DIR/tools/apktool
-wget --show-progress -O $WORKING_DIR/tools/apktool/apktool_${TAG}.jar "https://github.com/iBotPeaches/Apktool/releases/download/v${TAG}/apktool_${TAG}.jar"
-wget --show-progress -O $WORKING_DIR/tools/apktool/apktool_${TAG}.sh "https://raw.githubusercontent.com/iBotPeaches/Apktool/v${TAG}/scripts/linux/apktool"
+wget --show-progress -O $WORKING_DIR/tools/apktool/apktool.jar "https://github.com/iBotPeaches/Apktool/releases/download/v${TAG}/apktool_${TAG}.jar"
+wget --show-progress -O $WORKING_DIR/tools/apktool/apktool.sh "https://raw.githubusercontent.com/iBotPeaches/Apktool/v${TAG}/scripts/linux/apktool"
 
-# TODO put in correct dirs
-# ln -s $WORKING_DIR/tools/apktool/apktool_${TAG}.jar $HOME/.local/bin/apktool.jar
-# ln -s $WORKING_DIR/tools/apktool/apktool_${TAG}.sh $HOME/.local/bin/apktool
+ln -sf $WORKING_DIR/tools/apktool/apktool.jar $HOME/.local/bin/apktool.jar
+ln -sf $WORKING_DIR/tools/apktool/apktool.sh $HOME/.local/bin/apktool
+
+chmod +x $HOME/.local/bin/apktool
 
 echo -e "${GREEN}[+] Done!${NC}"
